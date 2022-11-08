@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>IMC</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Calcule o seu IMC</h1>
+        <p id="p-head">developebyPedro</p>
+       
+        <form action="/" id="form" method="post">
+            <label for="altura">Altura:</label> <br>
+            <input type="tel" name="altura" id="altura" placeholder="Digite sua Altura:"> <br>
+            <div class="teste1">
+                <label for="peso">Peso:</label><br>
+                <input type="text" name="peso" id="peso" placeholder="Digite seu Peso:"> <br>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="res">
+            <p></p>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root { 
+    --primary-color: #43CBFF;
+    --primary-color-darker: rgb(9, 48, 56);
+}
+h1{ 
+    text-align: center;
+}
+body{ 
+    background-color:  var(--primary-color);
+    font-family: 'Poppins';
+    font-size: 18pt;
+    line-height: 1.5em;
+}
+.container{ 
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+form{
+    padding-top: 10px;
+}
+form label{ 
+    font-size: 20pt;
+}
+form input{ 
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+form button{ 
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    transition: 1s all ease;
+}
+button:hover{ 
+    background-color: #3bc0e980;
+    font-size: 15pt;
+    height: 35px;
+}
+.p-res{ 
+    font-size: 20pt;
+    padding: 10px 20px;
+    background-color: rgb(81, 187, 81);
+}
+.n-res{ 
+    background-color: rgb(224, 65, 65);
+    color: white;
+    font-size: 20pt;
+}
+.teste1{ 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#p-head{ 
+    font-style: italic;
+    font-size: 12pt;
+    text-align: center;
+}
+#res p{
+    border-radius: 10px;
+    color: white;
+}
