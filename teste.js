@@ -137,13 +137,25 @@
 //     console.log(`Renan tem ${peso} kgs, sua altura ${altura} metros`)
 //     console.log(classificarIMC(imc))
 // } 
+//INSTACIA DE PESSOA 
+// const pedro = new Pessoa()
+// pedro.nome = 'Pedro S. Coelho'
+// pedro.idade = 19
+// pedro.altura = 1.80
+// pedro.peso = 30
+
+// const renan = new Pessoa()
+// renan.nome = 'Renan J'
+// renan.idade = 20
+// renan.peso = 50
+// renan.altura = 1.60
 
 // pesar()
 
 class Pessoa { 
     nome; 
     idade;
-
+    
     // O QUE ACONTECE QUANDO UMA PESSOA E INSTANCIADA, SEMPRE QUE TIVER UM NEW PESSOA 
     // O CONSTRUCTOR PASSA O PARAMETRO PARA DENTRO DELA
     constructor(nome, idade){ 
@@ -157,21 +169,19 @@ class Pessoa {
     }
 }
 
-const pedro = new Pessoa('Pedro S. Coelho', 19)
-const vitor = new Pessoa('Vitor Alguma Coisa', 30)
+function compararPessoas(p1, p2){ 
+    if(p1.idade > p2.idade){ 
+        console.log(`${p1.nome} e mais velho que ${p2.nome}`)
+    } else if (p1.idade < p2.idade){ 
+        console.log(`${p2.nome} e mais velho que ${p1.nome}`)
+    } else { 
+        console.log(`${p1} tem a mesma idade que ${p2}`)
+    }
+}
 
+const pedro = new Pessoa('Pedro S. Coelho', 19)
+const vitor = new Pessoa('Vitor nao sei oq', 30)
+
+compararPessoas(pedro, vitor)
 pedro.descrever()
 vitor.descrever()
-
-//INSTACIA DE PESSOA 
-// const pedro = new Pessoa()
-// pedro.nome = 'Pedro S. Coelho'
-// pedro.idade = 19
-// pedro.altura = 1.80
-// pedro.peso = 30
-
-// const renan = new Pessoa()
-// renan.nome = 'Renan J'
-// renan.idade = 20
-// renan.peso = 50
-// renan.altura = 1.60
