@@ -152,36 +152,55 @@
 
 // pesar()
 
-class Pessoa { 
-    nome; 
-    idade;
+// class Pessoa { 
+//     nome; 
+//     idade;
     
-    // O QUE ACONTECE QUANDO UMA PESSOA E INSTANCIADA, SEMPRE QUE TIVER UM NEW PESSOA 
-    // O CONSTRUCTOR PASSA O PARAMETRO PARA DENTRO DELA
-    constructor(nome, idade){ 
-        this.nome = nome
-        this.idade = idade
-        this.anoDeNasc = 2022 - idade
-    }
+//     // O QUE ACONTECE QUANDO UMA PESSOA E INSTANCIADA, SEMPRE QUE TIVER UM NEW PESSOA 
+//     // O CONSTRUCTOR PASSA O PARAMETRO PARA DENTRO DELA
+//     constructor(nome, idade){ 
+//         this.nome = nome
+//         this.idade = idade
+//         this.anoDeNasc = 2022 - idade
+//     }
 
-    descrever(){ 
-        console.log(`Meu nome e ${this.nome}, tenho ${this.idade} anos, nasceu no ano ${this.anoDeNasc}`)
+//     descrever(){ 
+//         console.log(`Meu nome e ${this.nome}, tenho ${this.idade} anos, nasceu no ano ${this.anoDeNasc}`)
+//     }
+// }
+
+// function compararPessoas(p1, p2){ 
+//     if(p1.idade > p2.idade){ 
+//         console.log(`${p1.nome} e mais velho que ${p2.nome}`)
+//     } else if (p1.idade < p2.idade){ 
+//         console.log(`${p2.nome} e mais velho que ${p1.nome}`)
+//     } else { 
+//         console.log(`${p1} tem a mesma idade que ${p2}`)
+//     }
+// }
+
+// const pedro = new Pessoa('Pedro S. Coelho', 19)
+// const vitor = new Pessoa('Vitor nao sei oq', 30)
+
+// compararPessoas(pedro, vitor)
+// pedro.descrever()
+// vitor.descrever()
+
+class Carro { 
+    marca; 
+    cor;
+    gasto;
+
+    constructor(marca, cor, gasto){ 
+        this.marca = marca
+        this.cor = cor
+        this.gasto = gasto
+    }
+    calcularGasto(distancia, precoCombustivel){
+        return (distancia / this.gasto) * precoCombustivel
     }
 }
-
-function compararPessoas(p1, p2){ 
-    if(p1.idade > p2.idade){ 
-        console.log(`${p1.nome} e mais velho que ${p2.nome}`)
-    } else if (p1.idade < p2.idade){ 
-        console.log(`${p2.nome} e mais velho que ${p1.nome}`)
-    } else { 
-        console.log(`${p1} tem a mesma idade que ${p2}`)
-    }
-}
-
-const pedro = new Pessoa('Pedro S. Coelho', 19)
-const vitor = new Pessoa('Vitor nao sei oq', 30)
-
-compararPessoas(pedro, vitor)
-pedro.descrever()
-vitor.descrever()
+const volks = new Carro('Volkswagen', 'Preto', 10) 
+const ferrari = new Carro('Ferrari', 'vermelha', 1)
+const res = ferrari.calcularGasto(300, 5)
+console.log(res)
