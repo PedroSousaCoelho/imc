@@ -144,20 +144,34 @@ class Pessoa {
     nome; 
     idade;
 
+    // O QUE ACONTECE QUANDO UMA PESSOA E INSTANCIADA, SEMPRE QUE TIVER UM NEW PESSOA 
+    // O CONSTRUCTOR PASSA O PARAMETRO PARA DENTRO DELA
+    constructor(nome, idade){ 
+        this.nome = nome
+        this.idade = idade
+        this.anoDeNasc = 2022 - idade
+    }
+
     descrever(){ 
-        console.log(`Meu nome e ${this.nome}, tenho ${this.idade} anos`)
+        console.log(`Meu nome e ${this.nome}, tenho ${this.idade} anos, nasceu no ano ${this.anoDeNasc}`)
     }
 }
 
-//INSTACIA DE PESSOA 
-const pedro = new Pessoa()
-pedro.nome = 'Pedro S. Coelho'
-pedro.idade = 19
-pedro.altura = 1.80
-pedro.peso = 30
+const pedro = new Pessoa('Pedro S. Coelho', 19)
+const vitor = new Pessoa('Vitor Alguma Coisa', 30)
 
-const renan = new Pessoa()
-renan.nome = 'Renan J'
-renan.idade = 20
-renan.peso = 50
-renan.altura = 1.60
+pedro.descrever()
+vitor.descrever()
+
+//INSTACIA DE PESSOA 
+// const pedro = new Pessoa()
+// pedro.nome = 'Pedro S. Coelho'
+// pedro.idade = 19
+// pedro.altura = 1.80
+// pedro.peso = 30
+
+// const renan = new Pessoa()
+// renan.nome = 'Renan J'
+// renan.idade = 20
+// renan.peso = 50
+// renan.altura = 1.60
