@@ -220,12 +220,13 @@ class Pessoa {
         const peso = this.peso
         const altura = this.altura
         const imc = calcularIMC(peso, altura)
-        console.log(`Pedro tem ${peso} kgs, sua altura ${altura} metros`)
+        console.log(`Cleytin tem ${peso} kgs, sua altura ${altura} metros`)
         console.log(classificarIMC(imc))
     } 
 }
 
 const pedro = new Pessoa('Pedro S. Coelho', 51, 1.74)
+const cleytin = new Pessoa('Cleytin', 80, 2.00)
 
 function calcularIMC(peso, altura){ 
     const resIMC = peso / Math.pow(altura, 2)
@@ -246,4 +247,4 @@ function classificarIMC(imc){
         return'Obesidade grave'
     }
 }
-pedro.pesar()
+cleytin.pesar()
