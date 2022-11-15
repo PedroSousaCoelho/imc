@@ -270,6 +270,7 @@ console.log(alunos.shift)
 TAMANHO DO ARRAY
 aluno.length */ 
 
+/*
 const aluno = []
 
 aluno.push(4)
@@ -294,4 +295,26 @@ function calcularMedia(soma_media){
 }
 
 calcularMedia(media / aluno.length)
+
+
+for (let i = 1; i <= 10; i++) {
+    let num = 5
+    let soma = num * i
+    console.log(soma)
     
+}
+
+
+let num = [1, 2, 3, 4, 5, 6]
+
+for(let i = 0; i < num.length; i++){
+    let number1 = num[i]
+    
+    if(number1 % 2 === 0){ 
+        console.log(`${number1}`)
+    } 
+}
+*/
+
+    
+
