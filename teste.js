@@ -316,5 +316,11 @@ for(let i = 0; i < num.length; i++){
 }
 */
 
-    
-
+function gets(a){ 
+    return a
+}
+function print(texto){ 
+    console.log(texto)
+}
+const a = gets(10)
+module.exports = {gets, print, a}
