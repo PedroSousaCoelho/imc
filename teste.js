@@ -314,7 +314,6 @@ for(let i = 0; i < num.length; i++){
         console.log(`${number1}`)
     } 
 }
-*/
 
 function gets(a){ 
     return a
@@ -324,3 +323,19 @@ function print(texto){
 }
 const a = gets(10)
 module.exports = {gets, print, a}
+*/
+
+const entradas = [100, 29, 33, 1000, 5, 50, 10, 98, 23]
+let i = 0
+
+function gets(){ 
+    const valor = entradas[i]
+    i++
+    return valor
+}
+
+function print(texto){ 
+    console.log(texto)
+}
+
+module.exports = {gets, print}
