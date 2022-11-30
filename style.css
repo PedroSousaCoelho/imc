@@ -3,7 +3,7 @@
     margin: 0;
 }
 :root { 
-    --primary-color: #43CBFF;
+    --primary-color: black;
     --primary-color-darker: rgb(9, 48, 56);
 }
 h1{ 
