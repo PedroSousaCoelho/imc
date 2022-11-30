@@ -23,8 +23,13 @@ body{
     padding: 20px;
     border-radius: 10px;
 }
+body .ajuste{ 
+    padding-top: 230px;
+}
+
 form{
     padding-top: 10px;
+    
 }
 form label{ 
     font-size: 20pt;
